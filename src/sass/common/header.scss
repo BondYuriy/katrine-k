@@ -1,0 +1,258 @@
+.header {
+  // position: fixed;
+  // left: 0;
+  // right: 0;
+  height: 190px;
+  position: relative;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.header-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 190px;
+  padding: 60px 0 25px 0;
+
+  & .navigations {
+    flex: 0 0 37%;
+
+    & .navbar {
+      padding: 0;
+
+      & .navbar-nav .nav-item {
+        & .nav-link {
+          color: $text-color;
+          font-size: 19px;
+          font-weight: 300;
+          text-transform: uppercase;
+
+          &:hover {
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+
+  & .logo {
+    align-self: flex-start;
+    flex: 0 0 295px;
+
+    & a {
+      display: block;
+
+      & img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  & .user-options {
+    flex: 0 0 35%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    & .personal-area {
+      height: 25px;
+      margin-right: 30px;
+
+      & svg {
+        display: block;
+        height: 100%;
+        max-width: 25px;
+        fill: #7b7373;
+      }
+
+      &:hover {
+        & svg {
+          fill: $text-color;
+        }
+      }
+    }
+
+    & .favorites {
+      margin-right: 30px;
+
+      & .img-box {
+        height: 25px;
+        position: relative;
+
+        & svg {
+          display: block;
+          height: 100%;
+          max-width: 25px;
+          fill: #7b7373;
+        }
+
+        & .number-goods {
+          display: inline-block;
+          width: 16px;
+          height: 16px;
+          border-radius: 50%;
+          background-color: $red-color;
+          font-size: 10px;
+          text-align: center;
+          line-height: 16px;
+          color: $white-text;
+          position: absolute;
+          bottom: -5px;
+          right: -4px;
+        }
+
+        &:hover {
+          & svg {
+            fill: $text-color;
+          }
+        }
+      }
+    }
+
+    & .search {
+      margin-right: 30px;
+      height: 25px;
+
+      & .btn-search-toggle {
+        display: block;
+
+        & .open-form {
+          height: 25px;
+
+          & svg {
+            display: block;
+            height: 100%;
+            max-width: 25px;
+            fill: #7b7373;
+          }
+
+          &:hover {
+            & svg {
+              fill: $text-color;
+            }
+          }
+        }
+      }
+
+      & .search-toggle {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.98);
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 1;
+
+        & .form-control {
+          border: 0;
+          border-radius: 0;
+          padding: 0;
+          width: 55%;
+          border-bottom: 1px solid #7b7373;
+          margin-right: 20px;
+          background-color: rgba(255, 255, 255, 0);
+
+          &:focus {
+            box-shadow: none;
+            border-bottom: 1px solid #231f20;
+          }
+        }
+
+        .btn-search {
+          border: 0;
+          padding: 0;
+          height: 25px;
+          background-color: rgba(255, 255, 255, 0);
+          margin-right: 20px;
+
+          & svg {
+            display: block;
+            height: 100%;
+            max-width: 25px;
+            fill: #7b7373;
+          }
+
+          &:hover {
+            & svg {
+              fill: $text-color;
+            }
+          }
+
+          &:focus {
+            outline: none;
+          }
+        }
+
+        & .close-form {
+          display: none;
+          color: #7b7373;
+          font-size: 34px;
+          vertical-align: middle;
+
+          &:hover {
+            color: $text-color;
+          }
+        }
+      }
+
+      & .open {
+        display: flex;
+
+        & .show {
+          display: block;
+        }
+      }
+    }
+
+    & .basket {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      border-radius: 0;
+      background-color: rgba(255, 255, 255, 0);
+
+      &:focus {
+        outline: none;
+      }
+
+      & .img-box {
+        height: 25px;
+        position: relative;
+
+        & svg {
+          display: block;
+          height: 100%;
+          max-width: 25px;
+          fill: #7b7373;
+        }
+
+        & .number-goods {
+          display: inline-block;
+          width: 16px;
+          height: 16px;
+          border-radius: 50%;
+          background-color: $red-color;
+          font-size: 10px;
+          text-align: center;
+          line-height: 16px;
+          color: $white-text;
+          position: absolute;
+          bottom: -5px;
+          right: -4px;
+        }
+
+        &:hover {
+          & svg {
+            fill: $text-color;
+          }
+        }
+      }
+    }
+  }
+}
