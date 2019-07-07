@@ -1,0 +1,16 @@
+.home-carousel {
+  margin-bottom: -4px;
+
+  & .item {
+    max-height: 900px;
+    overflow: hidden;
+
+    & .img-box {
+      & img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}

@@ -4,9 +4,9 @@
 <head>
   <title>Katrine K.</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/styles.css">
+  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+  <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
   <script src="js/jquery-1.11.2.min.js"></script>
 </head>
 
@@ -19,7 +19,7 @@
             <div class="header-box">
               <div class="navigations">
                 <nav class="navbar navbar-expand-lg">
-                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                  <button aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarCollapse" data-toggle="collapse" type="button">
                     <span class="navbar-toggler-icon"></span>
                   </button>
                   <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -42,7 +42,7 @@
               </div>
               <div class="logo">
                 <a href="index.html">
-                  <img src="img/logo_Katrin_K.png" alt="logo">
+                  <img alt="logo" src="img/logo_Katrin_K.png">
                 </a>
               </div>
               <div class="user-options">
@@ -59,7 +59,7 @@
                     <span class="number-goods">12</span>
                   </div>
                 </a>
-                <div class="search" action="#">
+                <div action="#" class="search">
                   <a class="btn-search-toggle">
                     <div class="open-form">
                       <svg>
@@ -68,7 +68,7 @@
                     </div>
                   </a>
                   <div class="search-toggle">
-                    <input class="form-control" type="text" placeholder="Что Вы ищите?">
+                    <input class="form-control" placeholder="Что Вы ищите?" type="text">
                     <button class="btn-search" type="button">
                       <svg>
                         <use href="img/sprite-options.svg#icon-search"></use>
@@ -76,8 +76,8 @@
                     </button>
                     <a class="close-form btn-search-toggle">&#10005;
                       <!-- <svg>
-                        <use href="img/sprite-options.svg#icon-search" />
-                      </svg> -->
+                                                                                                                                                                                                  <use href="img/sprite-options.svg#icon-search" />
+                                                                                                                                                                                                </svg> -->
                     </a>
                   </div>
                 </div>
@@ -99,17 +99,97 @@
       <div class="owl-carousel owl-theme home-carousel">
         <div class="item">
           <div class="img-box">
-            <img src="img/bg1_new.png" alt="foto home">
+            <img alt="foto home" src="img/bg1_new.png">
           </div>
         </div>
         <div class="item">
           <div class="img-box">
-            <img src="img/bg1_new.png" alt="foto home">
+            <img alt="foto home" src="img/bg1_new.png">
           </div>
         </div>
       </div>
     </main>
-    <footer class="footer-wrapper"></footer>
+    <footer class="footer-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="footer-box">
+              <div class="logo">
+                <a href="index.html">
+                  <img alt="logo" src="img/logo-Katrin-K-white.png">
+                </a>
+              </div>
+              <ul class="footer-nav-box">
+                <li class="footer-nav-item">
+                  <ul class="footer-nav">
+                    <li class="title">MY ACCOUNT</li>
+                    <li>
+                      <a href="#">ORDER HISTORY</a>
+                    </li>
+                    <li>
+                      <a href="#">WISH LIST</a>
+                    </li>
+                    <li>
+                      <a href="#">PERSONAL INFO</a>
+                    </li>
+                    <li>
+                      <a href="#">SECURITY</a>
+                    </li>
+                    <li>
+                      <a href="#">HELP</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="footer-nav-item">
+                  <ul class="footer-nav">
+                    <li class="title">INFORMATION</li>
+                    <li>
+                      <a href="#">FAQ</a>
+                    </li>
+                    <li>
+                      <a href="#">CONTACTS</a>
+                    </li>
+                    <li>
+                      <a href="#">CAREERS</a>
+                    </li>
+                    <li>
+                      <a href="#">SHIPPING INFO</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="fitback-box">
+                <form action="#" class="fitback-form">
+                  <label for="fitback-label">
+                    <span class="title">SUBSCRIBE</span>
+                    <span class="text">Enter email address:</span>
+                  </label>
+                  <input type="text">
+                </form>
+                <div class="social">
+                  <ul>
+                    <li>
+                      <a class="fa icon-instagram" href="#">
+                        <svg>
+                          <use href="img/sprite-social.svg#icon-instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="fa icon-facebook" href="#">
+                        <svg>
+                          <use href="img/sprite-social.svg#icon-facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </div>
 
   <script src="js/tether.min.js"></script>
@@ -119,7 +199,7 @@
   <script src="js/moment.js"></script>
   <script src="js/popper.js"></script>
   <!-- <script src="js/bootstrap.min.js"></script> -->
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script crossorigin="anonymous" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script src="js/modernizr.min.js"></script>
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/scripts.js"></script>
