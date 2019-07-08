@@ -1,0 +1,140 @@
+.product-card {
+  position: relative;
+  height: 363px;
+
+  & .card-hover-box {
+    width: 190px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    & .img-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 270px;
+      background-color: $white;
+      margin-bottom: 13px;
+      overflow: hidden;
+
+      & img {
+        display: block;
+        width: auto;
+        height: 100%;
+      }
+
+      & .product-favorites {
+        display: block;
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        right: 26px;
+        top: 11px;
+
+        & svg {
+          display: block;
+          width: 100%;
+          height: 100%;
+          fill: #7b7373;
+        }
+
+        &:hover {
+          & svg {
+            fill: $title-color;
+          }
+        }
+      }
+    }
+
+    & .card-info-box {
+      padding: 5px;
+
+      & .card-info {
+        & .title {
+          display: block;
+          color: #231f20;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 25px;
+          text-transform: uppercase;
+          text-align: center;
+        }
+
+        & .text {
+          margin: 0;
+          color: #231f20;
+          font-size: 13px;
+          font-weight: 300;
+          text-align: center;
+          margin-bottom: 5px;
+        }
+      }
+
+      & .price {
+        display: block;
+        color: #231f20;
+        font-size: 14px;
+        font-weight: 500;
+        text-align: center;
+      }
+    }
+
+    & .btn-box {
+      display: none;
+      align-items: center;
+
+      & .btn {
+        flex: 0 0 50%;
+        height: 34px;
+        font-size: 13px;
+        font-weight: 300;
+      }
+
+      & .btn-black-small {
+        background-color: #231f20;
+        color: #fdfdfd;
+      }
+
+      & .btn-gray {
+        background-color: #f7f5f5;
+        color: #231f20;
+      }
+    }
+
+    &:hover {
+      box-shadow: 4px 9px 28px rgba(35, 31, 32, 0.2);
+      background-color: #ffffff;
+      width: 240px;
+      z-index: 5;
+
+      & .img-box {
+        height: 250px;
+
+        & .product-favorites {
+          width: 20px;
+          height: 20px;
+        }
+      }
+
+      & .card-info-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        & .card-info {
+          & .title {
+            text-align: left;
+          }
+
+          & .text {
+            text-align: left;
+          }
+        }
+      }
+
+      & .btn-box {
+        display: flex;
+      }
+    }
+  }
+}

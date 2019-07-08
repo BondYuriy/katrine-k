@@ -1,0 +1,35 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+
+  & li {
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    & a {
+      display: block;
+      width: 100px;
+      height: 32px;
+      border: 1px solid #c4c4c4;
+      color: #c4c4c4;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 32px;
+      text-align: center;
+    }
+  }
+
+  & .active a {
+    border: 1px solid #231f20;
+    color: #231f20;
+
+    &:hover {
+      border: 1px solid #231f20;
+      background-color: #231f20;
+      color: #fff;
+    }
+  }
+}

@@ -1,11 +1,9 @@
 .header {
-  // position: fixed;
-  // left: 0;
-  // right: 0;
   height: 190px;
   position: relative;
   z-index: 10;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: #fdfdfd;
+  overflow: hidden;
 }
 
 .header-box {
@@ -255,4 +253,8 @@
       }
     }
   }
+}
+
+.header-styles {
+  border-bottom: 2px solid #b89a6b;
 }

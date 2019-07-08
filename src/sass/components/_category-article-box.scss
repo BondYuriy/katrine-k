@@ -1,0 +1,46 @@
+/*=== category-article-box ===*/
+
+.category-article-box {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 0;
+  border-bottom: 2px solid #b89a6b;
+
+  & .category-info {
+    flex: 0 0 66%;
+    padding-bottom: 60px;
+    position: relative;
+    color: #7b7373;
+    font-size: 14px;
+    font-weight: 400;
+
+    & .subtitle {
+      display: block;
+      color: #231f20;
+      font-size: 27px;
+      font-weight: 300;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    & .title {
+      margin-bottom: 10px;
+    }
+
+    & .btn {
+      position: absolute;
+      right: 83px;
+      bottom: 0;
+    }
+  }
+
+  & .img-box {
+    flex: 0 0 26%;
+
+    & img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+}

@@ -1,1 +1,51 @@
 /*=== category page ===*/
+
+.main-wrapper {
+  background-color: #fdfdfd;
+}
+
+.category-box {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 47px;
+
+  & .category-filter {
+    flex: 0 0 24%;
+
+    & .size-table {
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #707070;
+      width: 35%;
+      padding-bottom: 2px;
+      cursor: pointer;
+
+      & img {
+        margin-right: 13px;
+      }
+    }
+  }
+
+  & .category-main {
+    flex: 0 0 74%;
+
+    & .category-user-options {
+      margin-bottom: 25px;
+    }
+
+    & .category-list {
+      display: flex;
+      flex-wrap: wrap;
+
+      & .product-card {
+        flex: 0 0 22%;
+        margin-bottom: 30px;
+        margin-right: 32px;
+
+        &:nth-child(4n + 4) {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
