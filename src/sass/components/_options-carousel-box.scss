@@ -1,0 +1,38 @@
+.options-carousel-box {
+  padding: 50px 0;
+  border-top: 3px solid #b89a6b;
+
+  & .title {
+    color: #231f20;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  & .options-carousel {
+    & .item {
+      height: 500px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    & .owl-nav {
+      display: flex;
+      justify-content: space-between;
+      width: 95%;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+
+      & .owl-prev span,
+      .owl-next span {
+        font-size: 30px;
+        color: #c4c4c4;
+      }
+    }
+  }
+}
