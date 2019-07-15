@@ -20,13 +20,20 @@
     }
 
     & .owl-nav {
-      display: flex;
-      justify-content: space-between;
-      width: 95%;
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
+      & .owl-prev,
+      .owl-next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      & .owl-prev {
+        left: 10px;
+      }
+
+      & .owl-next {
+        right: 10px;
+      }
 
       & .owl-prev span,
       .owl-next span {
