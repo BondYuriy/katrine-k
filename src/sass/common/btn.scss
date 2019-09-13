@@ -26,6 +26,21 @@
   }
 }
 
+.btn-white {
+  width: 190px;
+  height: 52px;
+  background-color: #fdfdfd;
+  color: #231f20;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 52px;
+
+  &:hover {
+    color: #231f20;
+    opacity: 0.8;
+  }
+}
+
 .btn-transparent {
   width: 190px;
   height: 52px;

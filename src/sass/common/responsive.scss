@@ -477,3 +477,14 @@
     }
   }
 }
+
+/* === collections-list responsive === */
+@media (min-width: 1200px) {
+  .collections-list .collections-item {
+    margin-right: 0.1%;
+
+    &:nth-child(4n + 4) {
+      margin-right: 0;
+    }
+  }
+}
